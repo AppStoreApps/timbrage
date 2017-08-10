@@ -1,5 +1,8 @@
 $break-small: 320px;
 
+* {
+}
+
 page-timbrages {
 
     .toolbar-title, div.header {
@@ -33,7 +36,7 @@ page-timbrages {
                 }
 
                 > span:nth-child(2) {
-                    color: map-get($colors,secondary);
+                    color: map-get($colors,secondary-light);
                 }
             }
         }
@@ -66,6 +69,11 @@ page-timbrages {
             top: 13em;
         }
     }
+
+    ion-content.content.content-md, ion-list#timbrages ion-item {
+        background-color: map-get($colors,light);
+    }
+
     ion-list#timbrages {
         padding-top: 17em;
 
